@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://rawcdn.githack.com/matthewLeFevre/css-patterns/538fc0526caf35ca58f7631f37c0ad4bf2fe924f/dist/main.css">
+  <link rel="stylesheet" href="localStorage.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+</head>
+<body>
+  <form class="form--sml bg-light spacing--top--5 rounded">
+    <h1 class="form__title">To-do List App</h1>
+    <fieldset class="field spacing--bottom--2">
+      <label for="" class="label bold main">New To-do</label>
+      <input id="todo__text" type="text" class="input mdm breath full" placeholder="Add a to-do item...">
+      <button id="add__todo" class="btn primary" onclick="addTodo()" type="button">Add</button>
+    </fieldset>
+    <fieldset class="field">
+      <label for="" class="label bold main">To-dos:</label>
+      <ul id="todo__list"></ul>
+    </fieldset>
+    <fieldset class="field spacing--top--1">
+      <button type="button" class="btn secondary" id="save__todos" onclick="saveTodoList()">Save To-dos</button>
+    </fieldset>
+  </form>
+  <script src="./localStorage.js"></script>
+</body>
+</html>

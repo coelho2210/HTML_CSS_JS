@@ -1,0 +1,111 @@
+html {
+	background-color:      #EEF0F2;
+}
+
+h1 {
+	text-decoration:       underline;
+	font-size:             6vh;
+	text-align:            center;
+}
+
+p {
+	width:                 40vw;
+	background-color:      #DADDD8;
+	margin:                auto;
+	padding:               10px;
+	border-radius:         5px;
+	line-height:           1.7;
+
+    text-align:            justify;
+}
+
+#indexList {
+	text-align:            center;
+	list-style-type:       none;
+}
+
+#indexList li a {
+	color:                 black;
+	text-decoration:       none;
+}
+
+#indexList li a:hover {
+	display:               block;
+	text-decoration:       none;
+    transform:             scale(1.1);
+}
+
+#footer {
+	position:              fixed;
+	width:                 100vw;
+	background-color:      #DADDD8;
+	padding:               10px;
+	bottom:                -5px;
+	border-radius:         5px;
+	border:                solid;
+	border-color:          #1C1C1C;
+	font-style:            italic;
+	text-align:            center;
+
+}
+
+/******************CALCULATOR****************/
+.inputButton {
+	padding:              10px 15px 10px 15px;
+	display:              block;
+	float:                left;
+	border:               solid;
+	border-width:         1px;
+	width: 12px;
+	background-color:     darkgrey;
+	box-shadow:           1px 1px;
+	opacity:              .65;
+	user-select:          none;
+}
+
+#screen {
+	padding:              10px 15px 10px 15px;
+	display:              block;
+	float:                left;
+	border:               solid;
+	border-width:         1px;
+	width:                144px;
+	height:               2em;
+	background-color:     darkgrey;
+	box-shadow:           1px 1px;
+	opacity:              .65;
+	word-wrap:            break-word;
+	overflow:             auto;
+	user-select:          none;
+}
+
+#calcBase {
+	z-index:              9;
+	padding-left:         12px;
+	padding-bottom:       12px;
+	border:               solid;
+	background-color:     grey;
+	box-shadow:           1px 1px;
+	opacity:              .65;
+	display:              block;
+	margin:               0 auto;
+	width:                190px;
+	height:               315px;
+	user-select:          none;
+}
+
+.inputButton:hover, #screen:hover, #calcBase:hover {
+	opacity:              1;
+	user-select:          none;
+}
+
+.inputButton:active {
+	background-color:     grey;
+	user-select:          none;
+}
+
+.inputButton:hover {
+	cursor:               pointer;
+	user-select:          none;
+}
+/********************************************/

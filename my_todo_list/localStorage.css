@@ -1,0 +1,25 @@
+#todo__list {
+	list-style: none;
+	padding: 0 1em;
+}
+.todo__item {
+	background-color: #333;
+	padding: 1em;
+	border-radius: 4px;
+	color: #ebebeb;
+	font-size: 18px;
+	margin-bottom: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+  justify-content: space-between;
+  transition: background-color 300ms ease;
+}
+
+.todo__item:hover {
+  background-color: darkgrey;
+}
+
+.input {
+	background-color: white;
+}
